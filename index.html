@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Namaz Timings</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+  <nav id="navi">
+    <h1 id="first">Namaz Timings</h1>
+  </nav>
+
+  <form onsubmit="getData(); return false">
+    <input type="text" placeholder="Enter your city name" id="city" />
+    <button type="submit">Get Timings</button>
+  </form>
+
+  <div id="date"></div>
+
+  <div class="main">
+    <div id="main1">
+      <div class="Prayers"><p>Fajr</p><p id="fajr-time" class="times"></p></div>
+      <div class="Prayers"><p>Sunrise</p><p id="sunrise-time" class="times"></p></div>
+      <div class="Prayers"><p>Dhuhr</p><p id="zuhr-time" class="times"></p></div>
+      <div class="Prayers"><p>Asr</p><p id="asr-time" class="times"></p></div>
+    </div>
+    <div id="main2">
+      <div class="Prayers"><p>Maghrib</p><p id="maghrib-time" class="times"></p></div>
+      <div class="Prayers"><p>Isha</p><p id="isha-time" class="times"></p></div>
+      <div class="Prayers"><p>Imsak</p><p id="imsak-time" class="times"></p></div>
+      <div class="Prayers"><p>Sunset</p><p id="sunset-time" class="times"></p></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

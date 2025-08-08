@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  background: linear-gradient(to right, #d4af37, #1e90ff);
+  color: #000;
+}
+
+#navi {
+  background-color: black;
+  padding: 30px;
+  text-align: center;
+}
+
+#first {
+  color: rgb(64, 64, 255);
+  font-size: 40px;
+}
+
+form {
+  margin: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+#city {
+  border-radius: 50px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  width: 300px;
+}
+
+button {
+  padding: 15px 20px;
+  border-radius: 50px;
+  background-color: rgb(64, 64, 255);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: rgb(40, 40, 200);
+}
+
+#date {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  padding-top: 30px;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+
+.Prayers {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid #333;
+  border-radius: 15px;
+  width: 300px;
+  padding: 15px 20px;
+  margin: 10px;
+  background-color: white;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.times {
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Prayers {
+    width: 90%;
+  }
+}
